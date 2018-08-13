@@ -1,0 +1,387 @@
+*{
+    margin: 0em;
+    padding: 0em;
+}
+
+html, body{
+    height: 100%;
+    background-image: url(table.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#hdr{
+    font-size: 400%;
+    color: #FFF;
+    text-align: center;
+    margin-top: 2%;
+    font-family: 'Limelight', Arial, cursive;
+    letter-spacing: 0.05em;
+}
+
+#container{
+    width: 95%;
+    min-height: 78em;
+    position: relative;
+    margin: 2% auto;
+    box-sizing: border-box;
+    padding: 0.5em;
+    border: 0.05em solid #bfbfbf;
+    background-image: url(carpet.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#header{
+    width: 50%;
+    margin: 3% auto;
+    text-align: center;
+    border-top: 0.1em solid #FDEE00;
+    border-bottom: 0.1em solid #FDEE00;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+}
+
+#inner_header{
+    display: inline-block;
+}
+
+.king_img{
+    max-width: 3em;
+}
+
+.header_h1{
+    color: #FDEE00;
+    font-size: 230%;
+    font-family: 'Old Standard TT', Arial, serif;
+}
+
+.header_h1_2{
+    display: none;
+    font-family: 'Old Standard TT', Arial, serif;
+}
+
+#computer_hand_box{
+    text-align: center;
+}
+
+#computer_hand_box > h1{
+    color: #e60000;
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.card_box{
+    width: 230px;
+    height: 280px;
+    display: inline-block;
+    border: 0.1em solid #FDEE00;
+}
+
+#player_first_card{
+    transition: transform 0.6s linear;
+}
+
+#player_hand_box{
+    position: absolute;
+    bottom: 0.4em;
+    left: 30.5%;
+    text-align: center;
+}
+
+#player_hand_box > h1{
+    color: #e60000;
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+#player_hand_box img{
+    width: 230px;
+    height: 280px;
+    
+}
+
+#computer_hand_box img{
+    width: 230px;
+    height: 280px;
+    
+}
+
+#player_options{
+    position: absolute;
+    right: 2%;
+    bottom: 0%;
+}
+
+#player_options > button:focus{
+    outline: none;
+}
+
+#additional_comp_cards{
+    text-align: left;
+    margin-top: 2%;
+}
+
+#additional_comp_cards > img{
+    width: 90px;
+    height: 140px;
+    background-color: #FFF;
+}
+
+#additional_player_cards{
+    position: absolute;
+    top: 58%;
+    text-align: left;
+}
+
+#additional_player_cards > img{
+    width: 90px;
+    height: 140px;
+    background-color: #FFF;
+}
+
+
+.bet_money{
+    width: 11.8em;
+    box-sizing: border-box;
+    padding: 0.2em;
+    border: 0.2em solid #FDEE00;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    font-size: 1.5em;
+    color: #2eb82e;
+    text-align: center;
+    user-select: none;
+}
+
+#input_bet, #input_bet2, #input_bet3{
+    width: 80%;
+    text-align: center;
+    border: 0.03em solid #ebebeb;
+    font-size: 1em;
+}
+
+#input_bet:focus{
+    outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: limegreen;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: limegreen;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: limegreen;
+}
+
+
+.player_buttons{
+    display: block;
+    width: 11.4em;
+    font-size: 1.3em;
+    color: #FFF;
+    box-sizing: border-box;
+    padding: 0.3em;
+    background-color: transparent;
+    border: 0.01em solid #ebebeb;
+    cursor: pointer;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.player_buttons:not(:last-child){
+    margin-bottom: 20%;
+}
+
+#add_bet{
+    transition: background-color 0.3s ease, color 0.6s ease;
+}
+#add_bet:hover{
+    background-color: #29a329;
+    color: #FFF;
+}
+
+#add_card{
+    transition: background-color 0.3s ease, color 0.6s ease;
+}
+#add_card:hover{
+    background-color: orangered;
+    color: #FFF;
+}
+
+#end_turn{
+   transition: background-color 0.3s ease, color 0.6s ease; 
+}
+#end_turn:hover{
+    background-color: cadetblue;
+    color: #FFF;
+}
+
+#split_cards{
+    transition: background-color 0.3s ease, color 0.6s ease;
+}
+#split_cards:hover{
+    background-color: dodgerblue;
+    color: #FFF;
+}
+
+#start_game{
+   transition: background-color 0.3s ease, color 0.6s ease; 
+}
+#start_game:hover{
+    background-color: deepskyblue;
+    color: #FFF;
+}
+
+#end_game{
+   transition: background-color 0.3s ease, color 0.6s ease;  
+}
+#end_game:hover{
+   background-color: crimson;
+   color: #FFF;
+}
+
+#new_card_1, #new_card_2, #end_turn_1, #end_turn_2, #bet2, #bet3{
+    display: none;
+    transition: background-color 0.3s ease, color 0.6s ease;
+}
+
+#new_card_1:hover{
+    background-color: cornflowerblue;
+    color: #FFF;
+}
+
+#new_card_2:hover{
+    background-color: deepskyblue;
+    color: #FFF;
+}
+
+#end_turn_1:hover{
+    background-color: crimson;
+    color: #FFF;
+}
+
+#end_turn_2:hover{
+    background-color: darkorange;
+    color: #FFF;
+}
+
+#place_bet{
+    transition: background-color 0.3s ease, color 0.6s ease;
+}
+
+#place_bet:hover{
+    background-color: blueviolet;
+    color: #FFF;
+}
+
+#place_bet2, #place_bet3{
+    display: none;
+    transition: background-color 0.3s ease, color 0.6s ease;
+}
+
+#place_bet2:hover, #place_bet3:hover{
+    background-color: blueviolet;
+    color: #FFF;
+}
+
+/*---------------Media Queries---------------*/
+
+@media only screen and (max-width: 1206px){
+    .header_h1{
+        color: #FDEE00;
+        font-size: 170%
+    }
+}
+
+@media only screen and (max-width: 965px){
+    #hdr{
+        font-size: 300%;   
+    }
+    
+    #header{
+        width: 60%;
+    }
+    
+    .header_h1{
+        color: #FDEE00;
+        font-size: 150%
+    }
+}
+
+@media only screen and (max-width: 747px){
+    
+    #container{
+        width: 91%;
+        min-height: 45em;
+    }
+    
+    
+    #header{
+        width: 75%;
+    }
+    
+    .header_h1{
+        color: #FDEE00;
+        font-size: 150%
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #hdr{
+        font-size: 200%;   
+    }
+    
+    #header{
+        width: 95%;
+    }
+    
+    .header_h1{
+        display: none;
+    }
+    
+    .header_h1_2{
+        display: block;
+        color: #FDEE00;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #header{
+        width: 95%;
+    }
+    
+    .header_h1_2{
+        display: block;
+        color: #FDEE00;
+        font-size: 150%;
+    }
+    
+    .king_img{
+        max-width: 2em;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    #header{
+        width: 100%;
+    }
+    
+    .header_h1_2{
+        display: block;
+        color: #FDEE00;
+        font-size: 117%;
+    }
+    
+    .king_img{
+        max-width: 1.5em;
+    }
+}

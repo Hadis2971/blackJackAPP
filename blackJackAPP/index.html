@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BlackJack</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1 id="hdr">H.M.2971 &copy; Blackjack</h1>
+        <div id="container">
+            <div id="header">
+            <img src="king.png" class="king_img">    
+            <div id="inner_header">
+                <h1 class="header_h1">Welcome to Golden Boys</h1>
+                <h1 class="header_h1">Blackjack Royal</h1>
+                <h1 class="header_h1_2">Golden Boys Royal</h1>
+            </div>
+            <img src="king.png" class="king_img">    
+            </div>
+            <div id="computer_hand_box">
+                <h1>Computer Hand</h1>
+                <div class="card_box" id="comp_first_card">
+                    <img id="comp_first_card_img">
+                </div>
+                <div class="card_box" id="comp_second_card">
+                    <img id="comp_second_card_img">
+                </div>
+            </div>
+            <div id="additional_comp_cards">
+            </div>
+            <div id="additional_player_cards">
+            </div>
+            <div id="player_hand_box">
+                <div class="card_box" id="player_first_card">
+                    <img id="player_first_card_img">
+                </div>
+                <div class="card_box" id="player_second_card">
+                    <img id="player_second_card_img">
+                </div>
+                <h1>Player Hand</h1>
+            </div>
+            <div id="player_options">
+                    <p class="bet_money" id="money">Wallet: 100$</p>
+                    <p class="bet_money" id="bet"><input type="number" id="input_bet" placeholder="Type in your bet!!!" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Type in your bet'"></p>
+                    <button id="place_bet" class="player_buttons">Bet</button>
+                    
+                    <button id="end_turn" class="player_buttons">End Turn</button>
+                    <button id="add_card" class="player_buttons">New Card</button>
+                    <button id="split_cards" class="player_buttons">
+                            Split Cards</button>
+                    <button id="start_game" class="player_buttons">
+                            Start Game</button>
+                    <button id="end_game" class="player_buttons">
+                            End Game</button>
+                    
+                    <p class="bet_money" id="bet2"><input type="number" id="input_bet2" placeholder="First bet!!!" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Type in your bet'"></p>
+                
+                    <p class="bet_money" id="bet3"><input type="number" id="input_bet3" placeholder="Second bet!!!" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Type in your bet'"></p>
+                    <button id="place_bet2" class="player_buttons">Bet 1</button>
+                    <button id="place_bet3" class="player_buttons">Bet 2</button>
+                    <button id="new_card_1" class="player_buttons">New Card 1</button>
+                    <button id="new_card_2" class="player_buttons">New Card 2</button>
+                    <button id="end_turn_1" class="player_buttons">End Turn 1</button>
+                    <button id="end_turn_2" class="player_buttons">End Turn 2</button>
+            </div>
+        </div>
+        
+        <script src="main2.js"></script>
+    </body>
+</html>
